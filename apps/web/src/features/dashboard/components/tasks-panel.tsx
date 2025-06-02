@@ -4,11 +4,11 @@ import {
   useGetAllTasksQuery,
   useCompleteAllTasksMutation,
   useDeleteCompletedTasksMutation,
-} from "../api";
+  TasksList,
+} from "~/features/tasks";
 import { FilterPanel } from "./filter-panel";
 import { handleError } from "~/utils";
-import { TasksList } from "./tasks-list";
-import { type TasksFilterType } from "../types";
+import { type TasksFilterType } from "~/features/dashboard";
 
 export function TasksPanel() {
   const [filter, setFilter] = useState<TasksFilterType>("all");

@@ -1,1 +1,1 @@
-export { TasksPanel } from "./tasks-panel";
+export * from "./tasks-list";

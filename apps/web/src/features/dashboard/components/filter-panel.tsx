@@ -1,6 +1,6 @@
 import { Button } from "~/components/button";
 import { Panel } from "~/components/panel";
-import type { TasksFilterType } from "../types";
+import type { TasksFilterType } from "~/features/dashboard";
 
 interface FilterPanelProps {
   filter: TasksFilterType;

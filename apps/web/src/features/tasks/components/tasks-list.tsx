@@ -12,7 +12,8 @@ import {
 } from "../api";
 import { useState } from "react";
 import { handleError } from "~/utils";
-import { type Task, type TasksFilterType } from "../types";
+import { type Task } from "../types";
+import { type TasksFilterType } from "~/features/dashboard";
 import { twMerge } from "tailwind-merge";
 
 export const TasksList = ({ filter }: { filter: TasksFilterType }) => {

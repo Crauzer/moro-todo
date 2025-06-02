@@ -5,5 +5,3 @@ export type Task = {
   createdDate: number;
   completedDate?: number;
 };
-
-export type TasksFilterType = "all" | "active" | "completed";

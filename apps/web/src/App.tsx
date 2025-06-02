@@ -1,11 +1,14 @@
 import "./App.css";
-import { useCreateTaskMutation } from "~/features/tasks/api";
-import { TasksPanel } from "~/features/tasks/components";
 import { Panel } from "./components/panel";
 import { handleError } from "./utils";
-import { AddTaskForm, type AddTaskFormData } from "./features/dashboard";
+import {
+  AddTaskForm,
+  TasksPanel,
+  type AddTaskFormData,
+} from "./features/dashboard";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useCreateTaskMutation } from "./features/tasks";
 
 function App() {
   const [createTask] = useCreateTaskMutation();
